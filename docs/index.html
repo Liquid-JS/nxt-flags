@@ -77,13 +77,13 @@
 				<pre><code class="language-js"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">FlagsModule</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;nxt-flags&#039;</span><span style="color: #000000">;</span>
 
 <span style="color: #000000">@</span><span style="color: #795E26">NgModule</span><span style="color: #000000">({</span>
-<span style="color: #000000">  ...</span>
-<span style="color: #000000">  </span><span style="color: #001080">imports</span><span style="color: #000000">: [</span>
-<span style="color: #000000">    ...,</span>
-<span style="color: #000000">    </span><span style="color: #001080">FlagsModule</span><span style="color: #000000">,</span>
 <span style="color: #000000">    ...</span>
-<span style="color: #000000">  ],</span>
-<span style="color: #000000">  ...</span>
+<span style="color: #000000">    </span><span style="color: #001080">imports</span><span style="color: #000000">: [</span>
+<span style="color: #000000">        ...,</span>
+<span style="color: #000000">        </span><span style="color: #001080">FlagsModule</span><span style="color: #000000">,</span>
+<span style="color: #000000">        ...</span>
+<span style="color: #000000">    ],</span>
+<span style="color: #000000">    ...</span>
 <span style="color: #000000">})</span>
 </code></pre>
 				<p>Add this lines to <code>angular.json</code>:</p>
@@ -103,9 +103,7 @@
 				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 					<h2>Usage</h2>
 				</a>
-				<p>Use the tag <code>nxt-flag</code> with attribute <code>country=&quot;xx&quot;</code> (where <code>xx</code> is the
-					<a href="http://www.iso.org/iso/country_names_and_code_elements">ISO 3166-1-alpha-2 code</a>
-				of a country):</p>
+				<p>Use the tag <code>nxt-flag</code> with attribute <code>country=&quot;xx&quot;</code> (where <code>xx</code> is the<a href="http://www.iso.org/iso/country_names_and_code_elements">ISO 3166-1-alpha-2 code</a> of a country):</p>
 				<pre><code class="language-html"><span style="color: #800000">&lt;nxt-flag</span><span style="color: #000000"> </span><span style="color: #FF0000">country</span><span style="color: #000000">=</span><span style="color: #0000FF">&quot;br&quot;</span><span style="color: #800000">&gt;&lt;/nxt-flag&gt;</span>
 </code></pre>
 				<a href="#optional-attributes" id="optional-attributes" style="color: inherit; text-decoration: none;">
