@@ -1,0 +1,192 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>nxt-flags</title>
+	<meta name="description" content="Documentation for nxt-flags">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">nxt-flags</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>nxt-flags</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#nxt-flags" id="nxt-flags" style="color: inherit; text-decoration: none;">
+					<h1>nxt-flags</h1>
+				</a>
+				<p><a href="https://github.com/Liquid-JS/nxt-flags/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Liquid-JS/nxt-flags.svg" alt="GitHub license"></a>
+					<a href="https://www.npmjs.com/package/nxt-flags"><img src="https://img.shields.io/npm/dm/nxt-flags.svg" alt="npm"></a>
+				<a href="https://www.npmjs.com/package/nxt-flags"><img src="https://img.shields.io/npm/v/nxt-flags.svg" alt="scope"></a></p>
+				<p>Angular component to show country flags.</p>
+				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
+					<h2>Install</h2>
+				</a>
+				<p>Install the package with NPM:</p>
+				<pre><code class="language-bash"><span style="color: #000000">$ npm install nxt-flags</span>
+</code></pre>
+				<p>Import the module to app.module.ts:</p>
+				<pre><code class="language-js"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">FlagsModule</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;nxt-flags&#039;</span><span style="color: #000000">;</span>
+
+<span style="color: #000000">@</span><span style="color: #795E26">NgModule</span><span style="color: #000000">({</span>
+<span style="color: #000000">  ...</span>
+<span style="color: #000000">  </span><span style="color: #001080">imports</span><span style="color: #000000">: [</span>
+<span style="color: #000000">    ...,</span>
+<span style="color: #000000">    </span><span style="color: #001080">FlagsModule</span><span style="color: #000000">,</span>
+<span style="color: #000000">    ...</span>
+<span style="color: #000000">  ],</span>
+<span style="color: #000000">  ...</span>
+<span style="color: #000000">})</span>
+</code></pre>
+				<p>Add this lines to <code>angular.json</code>:</p>
+				<pre><code class="language-js"><span style="color: #000000">{</span>
+<span style="color: #000000">    ...</span>
+<span style="color: #000000">    </span><span style="color: #A31515">&quot;assets&quot;</span><span style="color: #000000">: [</span>
+<span style="color: #000000">        ...,</span>
+<span style="color: #000000">        {</span>
+<span style="color: #000000">            </span><span style="color: #A31515">&quot;glob&quot;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;**/*&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">            </span><span style="color: #A31515">&quot;input&quot;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;./node_modules/nxt-flags/assets/flags&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">            </span><span style="color: #A31515">&quot;output&quot;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;./assets/flags&quot;</span>
+<span style="color: #000000">        }</span>
+<span style="color: #000000">    ].</span>
+<span style="color: #000000">    ...</span>
+<span style="color: #000000">}</span>
+</code></pre>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage</h2>
+				</a>
+				<p>Use the tag <code>nxt-flag</code> with attribute <code>country=&quot;xx&quot;</code> (where <code>xx</code> is the
+					<a href="http://www.iso.org/iso/country_names_and_code_elements">ISO 3166-1-alpha-2 code</a>
+				of a country):</p>
+				<pre><code class="language-html"><span style="color: #800000">&lt;nxt-flag</span><span style="color: #000000"> </span><span style="color: #FF0000">country</span><span style="color: #000000">=</span><span style="color: #0000FF">&quot;br&quot;</span><span style="color: #800000">&gt;&lt;/nxt-flag&gt;</span>
+</code></pre>
+				<a href="#optional-attributes" id="optional-attributes" style="color: inherit; text-decoration: none;">
+					<h2>Optional attributes</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>attribute</th>
+							<th>options</th>
+							<th>default</th>
+							<th>description</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>size</td>
+							<td><code>&#39;xxs&#39;</code>, <code>&#39;xs&#39;</code>, <code>&#39;s&#39;</code>, <code>&#39;m&#39;</code>, <code>&#39;l&#39;</code>, <code>&#39;xl&#39;</code>, <code>&#39;xxl&#39;</code>, <number></td>
+							<td><code>48</code></td>
+							<td>sets the flag width</td>
+						</tr>
+						<tr>
+							<td>format</td>
+							<td><code>&#39;none&#39;</code>, <code>&#39;round&#39;</code>, <code>&#39;square&#39;</code></td>
+							<td><code>&#39;none&#39;</code></td>
+							<td>sets the flag format</td>
+						</tr>
+						<tr>
+							<td>class</td>
+							<td><string></td>
+							<td></td>
+							<td>apply custom class to flag</td>
+						</tr>
+				</tbody></table>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="enums/flagformat.html" class="tsd-kind-icon">Flag<wbr>Format</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/flagsize.html" class="tsd-kind-icon">Flag<wbr>Size</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/flagcomponent.html" class="tsd-kind-icon">Flag<wbr>Component</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/flagsmodule.html" class="tsd-kind-icon">Flags<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#flagdatabase" class="tsd-kind-icon">Flag<wbr>Database</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
