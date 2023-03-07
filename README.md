@@ -1,3 +1,5 @@
+# Moved to https://github.com/Liquid-JS/nxt-components/tree/master/packages/flags
+
 # nxt-flags
 
 [![GitHub license](https://img.shields.io/github/license/Liquid-JS/nxt-flags.svg)](https://github.com/Liquid-JS/nxt-flags/blob/master/LICENSE)
